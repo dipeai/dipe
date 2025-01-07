@@ -1,6 +1,5 @@
 ![Dipe AI Banner](https://docs.dipe.ai/~gitbook/image?url=https%3A%2F%2F3556248016-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252Ful9Supk3V2JefB5BD6IT%252Fuploads%252F2wumbMvYJL0ZdGrMp3ZZ%252Fbg%2520%2816%29.png%3Falt%3Dmedia%26token%3D35e2e457-06e7-4fcb-81a1-17e7ba902e7a&width=1248&dpr=1&quality=100&sign=2b46befc&sv=2)
 
-
 # Dipe AI Agent Framework
 
 A powerful toolkit for interacting with the Solana blockchain, providing easy-to-use functions for token operations, trading, and more. Now integrated with LangChain for enhanced functionality.
