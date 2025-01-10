@@ -301,7 +301,7 @@ async def main():
         "your-openai-api-key"
     )
 
-    confirmed = await agent.buy_with_raydium(
+    confirmed = await agent.buy_using_raydium(
         pair_address=Pubkey.from_string("target-pair-address"),  # The pair you want to buy from
         sol_in=1,  # Amount of SOL or input token to spend
         slippage=300  # Maximum slippage in basis points (3% here)
@@ -325,7 +325,7 @@ async def main():
         "your-openai-api-key"
     )
 
-    confirmed = await agent.sell_with_raydium(
+    confirmed = await agent.sell_using_raydium(
         input_mint=Pubkey.from_string("source-token-mint"),  # The token you want to sell
         percentage=100,
         slippage_bps=250  # Maximum slippage in basis points (2.5% here)
@@ -431,11 +431,11 @@ Launch a Pump & Fun token with customizable options.
 
 Create a Meteora DLMM pool with various configurations.
 
-#### `buy_with_raydium(agent, pair_address, sol_in, slippage)`
+#### `buy_using_raydium(agent, pair_address, sol_in, slippage)`
 
 Buy tokens from Raydium liquidity pools.
 
-#### `sell_with_raydium(agent, pair_address, percentage, slippage)`
+#### `sell_using_raydium(agent, pair_address, percentage, slippage)`
 
 Sell tokens using Raydium liquidity pools.
 

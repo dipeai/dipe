@@ -565,7 +565,7 @@ class SolanaRaydiumBuyTool(BaseTool):
             sol_in = data.get("sol_in", 0.01)  # Default to 0.01 SOL if not provided
             slippage = data.get("slippage", 5)  # Default to 5% slippage if not provided
 
-            result = await self.solana_kit.buy_with_raydium(pair_address, sol_in, slippage)
+            result = await self.solana_kit.buy_using_raydium(pair_address, sol_in, slippage)
 
             return {
                 "status": "success",
@@ -609,7 +609,7 @@ class SolanaRaydiumSellTool(BaseTool):
             percentage = data.get("percentage", 100)  # Default to 100% if not provided
             slippage = data.get("slippage", 5)  # Default to 5% slippage if not provided
 
-            result = await self.solana_kit.sell_with_raydium(pair_address, percentage, slippage)
+            result = await self.solana_kit.sell_using_raydium(pair_address, percentage, slippage)
 
             return {
                 "status": "success",

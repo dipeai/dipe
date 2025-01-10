@@ -81,13 +81,13 @@ class SolanaAgentKit:
         from dipe.tools.create_meteora_dlmm_pool import MeteoraManager
         return await MeteoraManager.create_meteora_dlmm_pool(self, bin_step, token_a_mint, token_b_mint, initial_price, price_rounding_up, fee_bps, activation_type, has_alpha_vault, activation_point)
     
-    async def buy_with_raydium(self, pair_address: str, sol_in: float = 0.01, slippage: int = 5):
+    async def buy_using_raydium(self, pair_address: str, sol_in: float = 0.01, slippage: int = 5):
         from dipe.tools.use_raydium import RaydiumManager
-        return await RaydiumManager.buy_with_raydium(self, pair_address, sol_in, slippage)
+        return await RaydiumManager.buy_using_raydium(self, pair_address, sol_in, slippage)
     
-    async def sell_with_raydium(self, pair_address: str, percentage: int = 100, slippage: int = 5):
+    async def sell_using_raydium(self, pair_address: str, percentage: int = 100, slippage: int = 5):
         from dipe.tools.use_raydium import RaydiumManager
-        return await RaydiumManager.sell_with_raydium(self, pair_address, percentage, slippage)
+        return await RaydiumManager.sell_using_raydium(self, pair_address, percentage, slippage)
     
     async def burn_and_close_accounts(self, token_account: str):
         from dipe.tools.burn_and_close_account import BurnManager

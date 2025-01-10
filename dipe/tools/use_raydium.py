@@ -34,12 +34,12 @@ class RaydiumManager:
     Provides methods to perform buy and sell operations on Raydium liquidity pools.
 
     Static Methods:
-        - buy_with_raydium: Executes a buy operation with specified SOL amount and slippage.
-        - sell_with_raydium: Executes a sell operation with specified token percentage and slippage.
+        - buy_using_raydium: Executes a buy operation with specified SOL amount and slippage.
+        - sell_using_raydium: Executes a sell operation with specified token percentage and slippage.
     """
 
     @staticmethod
-    def buy_with_raydium(agent: SolanaAgentKit, pair_address: str, sol_in: float = 0.01, slippage: int = 5) -> bool:
+    def buy_using_raydium(agent: SolanaAgentKit, pair_address: str, sol_in: float = 0.01, slippage: int = 5) -> bool:
         """
         Executes a buy operation on the specified Raydium pair.
 
@@ -163,7 +163,7 @@ class RaydiumManager:
             return False
 
     @staticmethod
-    def sell_with_raydium(agent: SolanaAgentKit, pair_address: str, percentage: int = 100, slippage: int = 5) -> bool:
+    def sell_using_raydium(agent: SolanaAgentKit, pair_address: str, percentage: int = 100, slippage: int = 5) -> bool:
         """
         Executes a sell operation on the specified Raydium pair.
 
